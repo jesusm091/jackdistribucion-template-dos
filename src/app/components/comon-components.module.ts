@@ -8,11 +8,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FooterComponent } from './footer/footer.component';
 
 
+
 @NgModule({
   declarations: [
     
     NavbarComponent,
          FooterComponent,
+        
     
   ],
   imports: [
@@ -21,11 +23,13 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     ReactiveFormsModule,
     IonicModule.forRoot(),
+    
   
   ],
   exports:[
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+   
   ]
 })
 export class ComonComponentsModule { }

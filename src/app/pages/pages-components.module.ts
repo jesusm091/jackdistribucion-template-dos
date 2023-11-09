@@ -9,6 +9,9 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { IonicModule } from '@ionic/angular';
 import { BrowserModule } from '@angular/platform-browser';
 import { ModulosSoftComponent } from './modulos-soft/modulos-soft.component';
+import { ComonComponentsModule } from '../components/comon-components.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ModalJackComponent } from '../components/modal-jack/modal-jack.component';
 
 
 
@@ -22,11 +25,16 @@ import { ModulosSoftComponent } from './modulos-soft/modulos-soft.component';
     PreciosComponent,
     NosotrosComponent,
     ModulosSoftComponent,
+    ModalJackComponent
   ],
   imports: [
     CommonModule,
     IonicModule.forRoot(),
+    ComonComponentsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
+  
   exports:[
     HomeComponent,
     BeneficiosComponent,
@@ -34,6 +42,10 @@ import { ModulosSoftComponent } from './modulos-soft/modulos-soft.component';
     ModulosSoftComponent,
     PreciosComponent,
     NosotrosComponent
-  ]
+  ],
+
+    
+    
+
 })
 export class PagesComponentsModule { }

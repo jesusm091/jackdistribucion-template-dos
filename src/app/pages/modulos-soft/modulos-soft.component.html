@@ -33,7 +33,7 @@
 
 
                         </span>
-                        <button  class="card-btn" aria-label="ver mas">
+                        <button  class="card-btn" (click)="openModal()" aria-label="ver mas">
                             Ver más
                             <ion-icon class="icon-center" name="arrow-forward"></ion-icon>
                           </button>
@@ -61,7 +61,7 @@
                             <b>- Generar Rutas de Venta </b><br>
                             <b>- Reportes</b><br>
                         </span>
-                        <button  class="card-btn" aria-label="ver mas">
+                        <button  (click)="openModaladmin()" class="card-btn" aria-label="ver mas">
                             Ver más
                             <ion-icon name="arrow-forward" class="icon-center"></ion-icon>
                           </button>
@@ -72,6 +72,389 @@
           </ul>
   
         </div>
+        <app-modal-jack id="modal-1">
+            <div class="header-modal">
+                <button (click)="modalService.close();">
+                    <ion-icon name="close"></ion-icon>
+                </button>
+            </div>
+           
+            <div class="container">
+  
+                <p class="section-subtitle">Aplicación Móvil</p>
+        
+                <h2 class="h2 section-title">Accede a los siguientes modulos desde nuestra App</h2>
+                <ul class="service-list grid-list-2">
+                   
+                  <li>
+                    <figure class="about-banner img-holder" style="--width: 400; --height: 720;">
+                        <img src="assets/images/about-banner.jpg" width="400" height="720" loading="lazy" alt=""
+                          class="img-cover">
+              
+                        
+                      </figure>
+                     
+                      
+                  </li>
+                  <li>
+                    <p class="card-title">
+                        Modulos
+                    </p>
+                    <ul class="about-list">
+  
+                        <li class="about-item">
+                          <div class="about-icon">
+                            <ion-icon name="chevron-forward"></ion-icon>
+                          </div>
+            
+                          <p class="about-text">
+                            Realiza pedidos.
+                          </p>
+                        </li>
+            
+                        <li class="about-item">
+                          <div class="about-icon">
+                            <ion-icon name="chevron-forward"></ion-icon>
+                          </div>
+            
+                          <p class="about-text">
+                            Realiza Entregas.
+                          </p>
+                        </li>
+            
+                        <li class="about-item">
+                          <div class="about-icon">
+                            <ion-icon name="chevron-forward"></ion-icon>
+                          </div>
+            
+                          <p class="about-text">
+                            Realiza facturas.
+                          </p>
+                        </li>
+            
+                      
+                        <li class="about-item">
+                          <div class="about-icon">
+                            <ion-icon name="chevron-forward"></ion-icon>
+                          </div>
+            
+                          <p class="about-text">
+                            Control de  inventario.
+                          </p>
+                        </li>
+            
+                        <li class="about-item">
+                          <div class="about-icon">
+                            <ion-icon name="chevron-forward"></ion-icon>
+                          </div>
+            
+                          <p class="about-text">
+                            Control de stock y series .
+                          </p>
+                        </li>
+                        <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                              control de clientes
+                            </p>
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                              Realiza cobros
+                            </p>
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                              Puedes verificar rutas asignadas para la venta o entrega de productos
+                            </p>
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                              Control Productos activos e inactivos
+                            </p>
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                              Reportes de caja, ventas, stock, almacenes, precios
+                            </p>
+                          </li>
+            
+                      </ul>
+                 
+                  </li>
+                  
+                </ul>
+        
+              </div>
+            <button class="close" (click)="modalService.close();">Cerrar</button>
+        </app-modal-jack>
+
+        <app-modal-jack id="modal-2">
+            <div class="header-modal">
+                <button (click)="modalService.close();">
+                    <ion-icon name="close"></ion-icon>
+                </button>
+            </div>
+            <div class="container">
+  
+                <p class="section-subtitle">Administrados</p>
+        
+                <h2 class="h2 section-title">Al acceder a nuestro administrador tendras accesos a los modulos de:</h2>
+                <ul class="service-list grid-list-2">
+                   
+                  <li>
+                    <figure class="about-banner img-holder" style="--width: 1080; --height: 720;">
+                        <img src="assets/images/admin.jpg" width="1080" height="720" loading="lazy" alt=""
+                          class="img-cover">
+              
+                        
+                      </figure>
+                      <br><br>
+                      <p class="card-title">
+                        ESPECIALES AVANZADOS
+                    </p>
+                    <ul class="about-list">
+  
+                      
+                        <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                                Adminsitracion de Colaboracion y tareas de empresa
+                            </p>
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                                Administracion de bancos, y transferencias de clientes
+                            </p>
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                                Administracion cajas, Mn/Me, caja chica
+                            </p>
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                                Modulo cuentas contables
+                            </p>
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                                Administrador de ingresos
+                            </p>
+                            
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                                Administrador de gastos
+                            </p>
+                            
+                          </li>
+                    </ul> 
+            
+                      
+                  </li>
+                  <li>
+                    <p class="card-title">
+                        Modulos
+                    </p>
+                    <p class="card-title">
+                        NECESARIOS DISTRIBUCION
+                    </p>
+                    <ul class="about-list">
+  
+                        <li class="about-item">
+                          <div class="about-icon">
+                            <ion-icon name="chevron-forward"></ion-icon>
+                          </div>
+            
+                          <p class="about-text">
+                            Modulo de Clientes
+                          </p>
+                        </li>
+            
+                        <li class="about-item">
+                          <div class="about-icon">
+                            <ion-icon name="chevron-forward"></ion-icon>
+                          </div>
+            
+                          <p class="about-text">
+                            Modulo de categoria de Clientes
+                          </p>
+                        </li>
+            
+                        <li class="about-item">
+                          <div class="about-icon">
+                            <ion-icon name="chevron-forward"></ion-icon>
+                          </div>
+            
+                          <p class="about-text">
+                            Gestion de productos
+                          </p>
+                        </li>
+            
+                      
+                        <li class="about-item">
+                          <div class="about-icon">
+                            <ion-icon name="chevron-forward"></ion-icon>
+                          </div>
+            
+                          <p class="about-text">
+                            Gestion de almacenes productos
+                          </p>
+                        </li>
+            
+                        <li class="about-item">
+                          <div class="about-icon">
+                            <ion-icon name="chevron-forward"></ion-icon>
+                          </div>
+            
+                          <p class="about-text">
+                            Módulo marcas
+                          </p>
+                        </li>
+                        <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                                Módulo Unidades
+                            </p>
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                                Adminsitracion de compras/importaciones
+                            </p>
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                                Administracion de almacenes, altas, bajas, traspasos, por llegar, en transito, PEPS, UEPS
+                            </p>
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                                Inventario valorizado, historico de movimiento de almacen
+                            </p>
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                                Adminstrador de preventas
+                            </p>
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                                Asignaciones preventista ruta
+                            </p>
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                                Asignaciones ruta distribuidor
+                            </p>
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                                Creacion y administracion de rutas
+                            </p>
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                                Picking
+                            </p>
+                          </li>
+                          <li class="about-item">
+                            <div class="about-icon">
+                              <ion-icon name="chevron-forward"></ion-icon>
+                            </div>
+              
+                            <p class="about-text">
+                                Liquidaciones de venta directa y por preventas
+                            </p>
+                          </li>
+                          
+                          
+                      </ul>
+                 
+                  </li>
+                  
+                </ul>
+        
+              </div>
+            <button  class="close" (click)="modalService.close();">Cerrar</button>
+        </app-modal-jack>
       </section>
   
                 
