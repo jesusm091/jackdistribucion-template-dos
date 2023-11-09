@@ -5,12 +5,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { IonicModule } from '@ionic/angular';
 import { BrowserModule } from '@angular/platform-browser';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     
     NavbarComponent,
+         FooterComponent,
     
   ],
   imports: [
@@ -22,8 +24,8 @@ import { BrowserModule } from '@angular/platform-browser';
   
   ],
   exports:[
-    NavbarComponent
-    
+    NavbarComponent,
+    FooterComponent
   ]
 })
 export class ComonComponentsModule { }
