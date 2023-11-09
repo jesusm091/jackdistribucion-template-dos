@@ -1093,7 +1093,9 @@ body {
   /**
    * NEWSLETTER
    */
-
+.newsletter h2{
+  color: white;;
+}
   .newsletter { margin-block-start: 110px; }
 
   .newsletter .container { position: relative; }
@@ -1101,9 +1103,13 @@ body {
   .newsletter .newsletter-banner {
     position: absolute;
     bottom: -50px;
-    left: 0;
+    left: -260px;
     margin-block-end: 0;
   }
+
+  .newsletter .newsletter-banner img{
+  height: 30em;
+}
 
   .newsletter-content {
     max-width: 355px;
